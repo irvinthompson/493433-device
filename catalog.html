@@ -2,18 +2,24 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <titile>Device</titile>
+        <title>Device</title>
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="header_menu">
-            <a href="index.html">
-            <img src="img/logo_1.png" width="183" height="63" alt="logo">
+            <a>
+            <img src="img/logo.png" width="186" height="63" alt="logo">
             </a>
             <div class="breadcrumbs">
-                <input type="search">
-                <a href="#">Войти</a>
-                <a href="#">Сравнить</a>
-                <a href="#">Корзина</a>
+                <form action="#" method="post">
+                    <ul class="breadcrumbs">
+                        <li><input type="search"></li>
+                        <li><a href="#">Войти</a></li>
+                        <li><a href="#">Сравнить</a></li>
+                        <li><a href="#">Корзина</a></li>
+                    </ul>
+                </form>
             </div>
             <div class="navigation">
                 <ul class="navigation_list">
@@ -36,8 +42,8 @@
         </div>
         <section class="main_section">
             <div class="main_section_toolbar">
-                <h3>Фильтры</h3>
-                <h3>Сортировать</h3>
+                <h3>Фильтр:</h3>
+                <h3>Сортировать:</h3>
                 <ul class="main_section_toolbar_list">
                     <li><a href="#">По цене</a></li>
                     <li><a href="#">По типу</a></li>
@@ -58,6 +64,7 @@
                     <input type="radio" name="radio_button" id="radio-1"><label for="radio-1"><p>Есть</p></label><br>
                     <input type="radio" name="radio_button" id="radio-2"><label for="radio-2"><p>Нет</p></label>
                 </form>
+                <a href="#" class="button button_6">Показать</a>
             </aside>
             <section class="main_section_item_list">
                 <article class="item_1">
@@ -82,20 +89,14 @@
                 </article>
             </section>
             <div class="movebar-menu">
-                <div class="movebar-menu_back-button">
-                    <a href="#" class="back_button">Назад</a>
-                </div>
-                <div class="movebar-menu_number-button">
+                <a href="#" class="back_button">Назад</a>
                     <ul class="movevar-menu_list">
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                     </ul>
+                <a href="#" class="front_button">Вперед</a>
                 </div>
-                <div class="movebar-menu_front-button">
-                    <a href="#" class="back_button">Назад</a>
-                </div>
-            </div>
         </section>
         <footer class="footer_menu">
             <div class="footer_logo">
