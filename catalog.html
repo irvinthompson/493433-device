@@ -7,13 +7,13 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <header class="header_menu">
+        <header class="header_menu_page_2 wrapper">
             <a>
             <img src="img/logo.png" width="186" height="63" alt="logo">
             </a>
             <div class="breadcrumbs">
                 <form action="#" method="post">
-                    <ul class="breadcrumbs">
+                    <ul class="breadcrumbs_list">
                         <li><input type="search"></li>
                         <li><a href="#">Войти</a></li>
                         <li><a href="#">Сравнить</a></li>
@@ -30,26 +30,33 @@
                 </ul>
             </div>
         </header>
-        <div class="title_page">
+        <div class="title_page wrapper">
             <h1>Моноподы для селфи</h1>
-        </div>
-        <div class="main-toolbar">
+            <div class="main_toolbar">
             <ul class="main-toolbar_list">
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Каталог товаров</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
             </ul>
+            </div>
         </div>
-        <section class="main_section">
+        <section class="main_section wrapper">
             <div class="main_section_toolbar">
+                <div class="main_section_filter_container">
+                <div class="main_section_filter_block">
                 <h3>Фильтр:</h3>
+                </div>
+                <div class="main_section_toolbar">
                 <h3>Сортировать:</h3>
                 <ul class="main_section_toolbar_list">
                     <li><a href="#">По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По популярности</a></li>
                 </ul>
+                </div>
+                </div>
             </div>
+            <div class="main_section_container">
             <aside class="main_filters_section">
                 <h3>Стоимость</h3>
 <!--Не знаю пока как сделать правильно форму с ползунком-->
@@ -67,6 +74,7 @@
                 <a href="#" class="button button_6">Показать</a>
             </aside>
             <section class="main_section_item_list">
+                <div class="flex_column_1">
                 <article class="item_1">
                     <img src="img/item-1.jpg" width="360" height="380" alt="item-1">
                     <h3>Любительская селфи палка</h3>
@@ -77,6 +85,8 @@
                     <h3>Профессиональная селфи-палка</h3>
                     <p>1500 руб</p>
                 </article>
+                </div>
+                <div class="flex_column_2">
                 <article class="item_3">
                 <img src="img/item-3.jpg" width="360" height="380" alt="item-3">
                     <h3>Непотопляемая селфи-палка</h3>
@@ -87,10 +97,12 @@
                     <h3>Селфи палка "Следуй за мной"</h3>
                     <p>4 900 руб</p>
                 </article>
-            </section>
+                </div>
+                </section>
+            </div>
             <div class="movebar-menu">
                 <a href="#" class="back_button">Назад</a>
-                    <ul class="movevar-menu_list">
+                    <ul class="movebar-menu_list">
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
@@ -98,7 +110,7 @@
                 <a href="#" class="front_button">Вперед</a>
                 </div>
         </section>
-        <footer class="footer_menu">
+        <footer class="footer_menu wrapper">
             <div class="footer_logo">
                 <img src="img/logo.png" width="183" height="63" alt="logo">
             <p>г.Москва, ул.Строителей, 15</p>
