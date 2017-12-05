@@ -8,17 +8,19 @@
     </head>
     <body>
         <header class="header_menu wrapper">
-            <a class="header-_menu_logo">
-            <img src="img/logo_1.png" width="186" height="63" alt="logo">
+            <div class="header-logo">
+            <a class="header_menu_logo">
+            <img src="img/logo_1.png" width="164" height="36" alt="logo" class="logo">
             </a>
+            </div>
             <div class="breadcrumbs">
-                <form action="#" method="post">
-                    <input type="search">
+                <form class="search-form" action="url" method="post">
+                    <input class="search-field" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
                 </form>
                     <ul class="breadcrumbs_list">
-                        <li><a href="#">Войти</a></li>
-                        <li><a href="#">Сравнить</a></li>
-                        <li><a href="#">Корзина</a></li>
+                        <li class="breadcrumbs_item"><a href="#">Войти</a></li>
+                        <li class="breadcrumbs_item"><a href="#">Сравнить</a></li>
+                        <li class="breadcrumbs_item"><a href="#">Корзина</a></li>
                     </ul>
             </div>
             <div class="navigation">
@@ -41,8 +43,6 @@
                 <h1>Делай селфи,<br> как Бен Стилер!</h1>
                 <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь(Восемь, Карл!)метров длиной и весом всего 5 кг</p>
                 <a href="#" class="button">Подробнее</a>
-<!--Тут видимо должен быть переключатель слайдеров, не очень пока понимаю что это такое там-->
-<!--                Решил тут сделать таблицой, еще я так понимаю можно сделать чере ul, но надо с тобой посоветоваться-->
                 <table class="section_table">
                     <tr class="coll-1">
                         <th>8,5 м</th>
@@ -60,39 +60,36 @@
         </div>
         <div class="items_section wrapper">
             <ul class="items_section_list space_container">
-<!--Изображения вставлю потом-->
-                <li><a href="#"><img src="img/popular-1.png" width="97" height="55" alt="slide-1"></a><p>Виртуальная реальность</p></li>
-                <li><a href="#"><img src="img/popular-2.png" width="86" height="117" alt="slide-2"></a><p>Моноподы для селфи</p></li>
-                <li><a href="#"><img src="img/popular-3.png" width="71" height="87" alt="slide-3"></a><p>Экшн-камеры</p></li>
-                <li><a href="#"><img src="img/popular-4.png" width="107" height="65" alt="slide-4"></a><p>Фитнес-браслеты</p></li>
-                <li><a href="#"><img src="img/popular-5.png" width="56" height="98"></a><p>Умные часы</p></li>
-                <li><a href="#"><img src="img/poppular-6.png" width="132"height="69"></a><p>Квадрокоптеры</p></li>
+                <li><a href="#"><img class="item-1"src="img/popular-1.png" width="97" height="55" alt="slide-1"></a><p>Виртуальная реальность</p></li>
+                <li><a href="#"><img class="item-2" src="img/popular-2.png" width="86" height="117" alt="slide-2"></a><p>Моноподы для селфи</p></li>
+                <li><a href="#"><img class="item-3" src="img/popular-3.png" width="71" height="87" alt="slide-3"></a><p>Экшн-камеры</p></li>
+                <li><a href="#"><img class="item-4" src="img/popular-4.png" width="107" height="65" alt="slide-4"></a><p>Фитнес-браслеты</p></li>
+                <li><a href="#"><img class="item-5" src="img/popular-5.png" width="56" height="98"></a><p>Умные часы</p></li>
+                <li><a href="#"><img class="item-6" src="img/poppular-6.png" width="132"height="69"></a><p>Квадрокоптеры</p></li>
             </ul>
         </div>
-        <div class="benefits_section wrapper">
-<!--Не очень пока понимаю как правильно сделать этот кусок, я пока примерно напишу, как думаю, потому что видимо тут задумано что ты нажимаешь на пункт и должна меняться информация, грубо говоря когда нажимаешь на "Доставку" - пишеться информация про доставку, а когда на гарантию, соответсвенно будет написано про гарантию. Поэтому я сейчас пункты "Доставка" "Гарантия" "Кредит" обозначу как ссылки, а информацию просто сделаю <aside>-->
-        <div class="benefits_list">
+        <div class="benefits_section ">
+        <div class="benefits_list wrapper">
             <ul class="benefits_list_items">
             <li><a href="#" class="button">Доставка</a></li>
             <li><a href="#" class="button">Гарантия</a></li>
             <li><a href="#" class="button">Кредит</a></li>
             </ul>
         </div>
-            <aside class="benefits_information">
+            <aside class="benefits_information wrapper">
                 <h2>Доставка</h2>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на этаж</p>
             </aside>
         </div>
         <div class="parnters_section wrapper">
-<!--            Тут у меня тоже есть вопрос по этой части. Дело в том что они должны при наведение менять цвет, то есть стать своего стандартного цвета. Я вот не знаю как сделать лучше с ховером. Просто в прошлый раз у меня так и не получилось это сделать, и я думаю что стоит наверное указывать изображения в css?Посоветуй как сделать лучше эту часть-->
+
             <ul class="partners_list space_container">
-                <li><a href="#"><img src="img/logo-1.jpg%20.png" width="260" height="100" alt="logo-1"></a></li>
-                <li><a href="#"><img src="img/logo-2.jpg%20copy.png" width="260" height="100"></a></li>
-                <li><a href="#"><img src="img/logo-3.jpg%20copy.png" width="260" height="100" alt="logo-3"></a></li>
-                <li><a href="#"><img src="img/logo-4.jpg%20copy.png" width="260"height="100"></a></li>
+                <li class="partners_item"><a href="#"><img src="img/logo-1.png" width="260" height="100" alt="logo-1"></a></li>
+                <li class="partners_item"><a href="#"><img src="img/logo-3.png" width="260" height="100"></a></li>
+                <li class="partners_item"><a href="#"><img src="img/logo-2.png" width="260" height="100" alt="logo-3"></a></li>
+                <li class="partners_item"><a href="#"><img src="img/logo-4.png" width="260"height="100"></a></li>
             </ul>
         </div>
-<!--Я пока просто блоки подготовил, потом я у тебя хотел спросить, потому что тут вроде надо будет сделать блок wrapper. Еще вроде как тут надо будет делать через flex-box -->
         <div class="info_section wrapper">
             <div class="info_about-us">
                 <h2>О нас</h2>
@@ -108,13 +105,11 @@
             <div class="info_contacts">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br> проверить работоспособность покупки. Всякое бывает</p>
-<!--Тут будет карта, но я только не понимаю - её просто вставлять картинкой, или она должна быть интерактивной.-->
                 <a href="#" class="button button_6">Напишите нам</a>
             </div>
         </div>
-<!--        Эту часть обязательно проверь внимательно, потому что я тут не очень понимаю как мне правильно поделить на блоки и в каком порядке мне тут писать, я я пока образно накидаю, а потом мы с тобой внимательно разберем эта часть-->
-        <footer class="footer_menu wrapper">
-            <div class="footer_container_1">
+        <footer class="footer_menu">
+            <div class="footer_container_1 wrapper">
                 <img src="img/logo.png" width="186" height="63" alt="logo">
                 <ul class="footer_breadcrumbs">
                 <li><a href="#">Войти</a></li>
@@ -122,7 +117,7 @@
                 <li><a href="#">Корзина</a></li>
                 </ul>
             </div>
-            <div class="footer_navigation">
+            <div class="footer_navigation wrapper">
                 <p>г.Москва, ул.Строителей, 15</p>
                 <ul class="footer_navigation_list">
                     <li><a href="#">Доставка</a></li>
@@ -133,11 +128,11 @@
                 <p>Тел +7(495) 495-95-95</p>
             </div>
             </div>
-            <div class="footer_social_buttons">
+            <div class="footer_social_buttons wrapper">
                 <ul class="footer_social_list">
-                    <li><a href="#">Фейсбук</a></li>
-                    <li><a href="#">Инстаграм</a></li>
-                    <li><a href="#">Твитер</a></li>
+                    <li><a class="social-button social-button-fb" href="#" ></a></li>
+                    <li><a class="social-button social-button-insta" href="#"></a></li>
+                    <li><a class="social-button social-button-tw" href="#"></a></li>
                 </ul>
             </div>
             <div class="footer_logo_svg">

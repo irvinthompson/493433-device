@@ -8,17 +8,19 @@
     </head>
     <body>
         <header class="header_menu wrapper">
-            <a class="header-_menu_logo">
-            <img src="img/logo_1.png" width="186" height="63" alt="logo">
+            <div class="header-logo">
+            <a class="header_menu_logo">
+            <img src="img/logo_1.png" width="164" height="36" alt="logo" class="logo">
             </a>
+            </div>
             <div class="breadcrumbs">
-                <form action="#" method="post">
-                    <input type="search">
+                 <form class="search-form" action="url" method="post">
+                    <input class="search-field" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
                 </form>
                     <ul class="breadcrumbs_list">
-                        <li><a href="#">Войти</a></li>
-                        <li><a href="#">Сравнить</a></li>
-                        <li><a href="#">Корзина</a></li>
+                        <li class="breadcrumbs_item"><a href="#">Войти</a></li>
+                        <li class="breadcrumbs_item"><a href="#">Сравнить</a></li>
+                        <li class="breadcrumbs_item"><a href="#">Корзина</a></li>
                     </ul>
             </div>
             <div class="navigation">
@@ -79,11 +81,19 @@
                     <img src="img/item-1.jpg" width="360" height="380" alt="item-1">
                     <h3>Любительская селфи палка</h3>
                     <p>500 руб.</p>
+                    <div class="item-hover">
+                        <a class="button" href="#">В корзину</a>
+                        <a href="#">Добавить к сравнению</a>
+                    </div>
                 </article>
                 <article class="item_2">
                 <img src="img/item-2.jpg" width="360" height="380" alt="item-2">
                     <h3>Профессиональная селфи-палка</h3>
                     <p>1500 руб</p>
+                    <div class="item-hover">
+                        <a class="button" href="#">В корзину</a>
+                        <a href="#">Добавить к сравнению</a>
+                    </div>
                 </article>
                 </div>
                 <div class="flex_column_2">
@@ -91,11 +101,19 @@
                 <img src="img/item-3.jpg" width="360" height="380" alt="item-3">
                     <h3>Непотопляемая селфи-палка</h3>
                     <p>2 500 руб</p>
+                    <div class="item-hover">
+                        <a class="button" href="#">В корзину</a>
+                        <a href="#">Добавить к сравнению</a>
+                    </div>
                 </article>
                 <article class="item_4"> 
                 <img src="img/item-4.jpg" width="360" height="380" alt="item-4">
                     <h3>Селфи палка "Следуй за мной"</h3>
                     <p>4 900 руб</p>
+                    <div class="item-hover">
+                        <a class="button" href="#">В корзину</a>
+                        <a href="#">Добавить к сравнению</a>
+                    </div>
                 </article>
                 </div>
                 </section>
@@ -110,8 +128,8 @@
                 <a href="#" class="front_button">Вперед</a>
                 </div>
         </section>
-        <footer class="footer_menu wrapper">
-            <div class="footer_container_1">
+        <footer class="footer_menu">
+            <div class="footer_container_1 wrapper">
                 <img src="img/logo.png" width="186" height="63" alt="logo">
                 <ul class="footer_breadcrumbs">
                 <li><a href="#">Войти</a></li>
@@ -119,7 +137,7 @@
                 <li><a href="#">Корзина</a></li>
                 </ul>
             </div>
-            <div class="footer_navigation">
+            <div class="footer_navigation wrapper">
                 <p>г.Москва, ул.Строителей, 15</p>
                 <ul class="footer_navigation_list">
                     <li><a href="#">Доставка</a></li>
@@ -130,11 +148,11 @@
                 <p>Тел +7(495) 495-95-95</p>
             </div>
             </div>
-            <div class="footer_social_buttons">
+            <div class="footer_social_buttons wrapper">
                 <ul class="footer_social_list">
-                    <li><a href="#">Фейсбук</a></li>
-                    <li><a href="#">Инстаграм</a></li>
-                    <li><a href="#">Твитер</a></li>
+                    <li><a class="social-button social-button-fb" href="#" ></a></li>
+                    <li><a class="social-button social-button-insta" href="#"></a></li>
+                    <li><a class="social-button social-button-tw" href="#"></a></li>
                 </ul>
             </div>
             <div class="footer_logo_svg">
