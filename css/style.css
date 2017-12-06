@@ -45,6 +45,13 @@ body {
     background-color: #f7e296;
 }
 
+.header_container {
+    width: 1160px;
+    margin: 0 auto;
+   
+}
+
+
 .header_menu_page_2 {
     background-color: #f7e296;
 }
@@ -76,22 +83,41 @@ a {
     font-weight: bold;
     color: #000000;
     text-transform: uppercase;
-    
-    
+    letter-spacing: 3.4px
+}
+
+.navigation_list_page_2 a {
+    font-family: "Gilroy";
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3.4px
 }
 
 .navigation_list {
     list-style: none;
 }
 
+.navigation_list_page_2 {
+    list-style: none;
+}
 
 .navigation_list a:hover,
 .breadcrumbs_list a:hover {
     opacity: 0.6;
 }
 
+.navigation_list_2 a:hover {
+    opacity: 0.6;
+}
+
 .navigation_list a:active,
 .breadcrumbs_list a:active {
+    opacity: 0.3;
+}
+
+.navigation_list_page_2 a:active{
     opacity: 0.3;
 }
 
@@ -102,13 +128,17 @@ a {
     font-weight: bold;
     font-size: 47px;
     color: #000000;
+    line-height: 57px;
+    text-transform: none;
+    letter-spacing: 0.47px;
 }
 
 .carousel p {
-    font-family: "Open Sans";
+    font-family: "Open Sans" Arial, sans-serif;
     font-size: 15px;
     color: #464646;
     line-height: 30px;
+    font-weight: normal;
 }
 
 .button {
@@ -139,6 +169,7 @@ a {
   background-color: #f0c52e;
 }
 
+
 .table {
     width: 425px;
     height: 60px;
@@ -156,6 +187,7 @@ td {
     font-family: "Open Sans";
     font-weight: 400;
     padding-left: 80px;
+    
 }
 
 .items_section_list li::before{
@@ -272,7 +304,10 @@ td {
     font-size: 15px;
     line-height: 30px;
     color: #464646;
+    letter-spacing: -0.6px;
 }
+
+
 
 .company_list li {
     font-family: "Gilroy";
@@ -325,6 +360,8 @@ td {
     font-size: 47px;
     font-weight: bold;
     color: #000000;
+    letter-spacing: 0.47px;
+    margin-left: 60px
 }
 
 .main-toolbar_list li {
@@ -333,6 +370,11 @@ td {
     font-family: "Open Sans";
     font-size: 14px;
     color: #cacaca;
+}
+
+.main-toolbar_list  {
+    margin-top: -9px;
+    margin-left: 70px;
 }
 
 .main-toolbar_list a {
@@ -345,10 +387,22 @@ td {
     font-weight: bold;
     text-transform: uppercase;
     color: #000000;
+    letter-spacing: 3.4px;
+}
+
+.main_section_filter_block {
+    margin-top: -4px;
+    padding-left: 62px;
 }
 
 .main_section_toolbar_list li {
     list-style: none;
+}
+
+.main_section_toolbar_titile {
+    margin-top: -4px;
+    margin-left: 2px;
+    letter-spacing: 3.4px;
 }
 
 
@@ -485,21 +539,21 @@ td {
 
 .breadcrumbs input {
     margin-top: 30px;
-    margin-left: 70px
+    margin-left: 95px
 }
 
 .breadcrumbs_list {
     display: flex;
-    margin-top: 30px;
-    margin-left: 300px;
+    margin-top: 31px;
+    margin-left: 295px;
 }
 
 .breadcrumbs_list li:nth-child(2) {
-    margin-left: 215px;
+    margin-left: 239px;
 }
 
 .breadcrumbs_list li:nth-child(3) {
-    margin-left: 40px;
+    margin-left: 65px;
 }
 
 .search-form::before {
@@ -512,8 +566,8 @@ td {
     background-position: center;
     
     position: absolute;
-    top: 88px;
-    left: 320px
+    top: 86px;
+    left: 344px
 }
 
 .search-form input {
@@ -544,7 +598,7 @@ td {
     width: 15px;
     height: 15px;
     position: absolute;
-    right: 786px;
+    right: 766px;
     top: 88px;
 }
 
@@ -558,8 +612,8 @@ td {
     width: 15px;
     height: 15px;
     position: absolute;
-    right: 520px;
-    top: 88px;
+    right: 484px;
+    top: 89px;
 }
 
 .breadcrumbs_item:nth-child(3) a::before  {
@@ -572,7 +626,7 @@ td {
     width: 15px;
     height: 15px;
     position: absolute;
-    right: 410px;
+    right: 351px;
     top: 88px;
 }
 
@@ -581,18 +635,38 @@ td {
     display: flex;
     margin-left: 20px;
     margin-bottom: 170px;
+    margin-top: 32px;
+}
+
+.navigation_list_page_2 {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 32px;
 }
 
 .navigation_list li:nth-child(2) {
-    margin-left: 370px;
+    margin-left: 435px;
+}
+
+.navigation_list_page_2 li:nth-child(2) {
+    margin-left: 435px;
 }
 
 .navigation_list li:nth-child(3) {
-    margin-left: 30px;
+    margin-left: 33px;
+}
+
+.navigation_list_page_2 li:nth-child(3) {
+    margin-left: 33px;
 }
 
 .navigation_list li:nth-child(4) {
-    margin-left: 130px;
+    margin-left: 110px;
+}
+
+.navigation_list_page_2 li:nth-child(4) {
+    margin-left: 110px;
 }
 
 .header_menu_page_2 .breadcrumbs input {
@@ -606,16 +680,28 @@ td {
 }
 
 .section_logo {
-    margin-top: -130px;
-    margin-left: 50px;
+    margin-top: -135px;
+    margin-left: 90px;
 }
 
 .section_container {
-    margin-left: 130px;
+    margin-left: 125px;
+    margin-top: -86px;
+}
+
+.section_container p {
+    margin-top: -16px
+    
+}
+
+.section_container a {
+    margin-left: -20px;
+    margin-top: 31px;
 }
 
 .section_container table {
-    margin-left: -80px;
+    margin-left: -85px;
+    margin-top: 57px
 }
 
 .space_container {
@@ -639,11 +725,12 @@ td {
 }
 
 .benefits_information h2{
-    margin-bottom: 20px;
+    margin-top: 62px;
+    margin-left: -290px
 }
 
 .benefits_information p {
-    margin-bottom: 150px;
+    margin-top: -10px;
 }
 
 .benefits_list a{
@@ -655,17 +742,54 @@ td {
 }
 
 .parnters_section {
-    margin-top: 105px;
+    margin-top: 200px;
+}
+
+.parnters_section a:first-child {
+    margin-left: -40px;
 }
 
 .info_section {
     display: flex;
-    margin-top: 105px;
+    margin-top: 100px;
     margin-bottom: 95px;
 }
 
 .info_contacts {
     margin-left: 140px;
+}
+
+.company_list li {
+    padding: 11px
+}
+
+.company_list li:first-child {
+    margin-left: 10px;
+    margin-top: -30px
+}
+
+.company_list li:nth-child(2) {
+    margin-left: 10px;
+}
+
+.company_list li:nth-child(3) {
+    margin-top: -1px;
+    margin-left: 10px;
+}
+
+.company_list  {
+    margin-top: 80px;
+    margin-left: -26px;
+    margin-bottom: 60px;
+}
+
+.info_contacts h2 {
+    margin-left: 20px;
+    letter-spacing: 0.47px;
+}
+
+.info_contacts p {
+    margin-left: 20px;
 }
 
 .footer_menu {
@@ -674,33 +798,57 @@ td {
     
 }
 
+.footer_menu img {
+    margin-top: 57px;
+}
+
+
+
 .footer_container_1 {
     display: flex;
 }
 
+
+
 .footer_breadcrumbs {
     display: flex;
-    margin-left: 400px;
+    margin-left: 618px;
+    margin-top: 62px
 }
 
 .footer_breadcrumbs li {
     padding-left: 40px;
 }
 
+.footer_breadcrumbs li:nth-child(2) {
+    padding-left: 65px
+}
+
+.footer_breadcrumbs li:nth-child(3) {
+    padding-left: 65px;
+}
+
 .footer_navigation {
     display: flex;
-    margin-top: 40px;
+    margin-top: 22px;
+    margin-bottom: 35px
 }
+
 
 .footer_navigation_list {
     display: flex;
-    margin-left: 70px;
+    margin-left: 40px;
+
+}
+
+.footer_navigation_list ul {
+    margin-left: -40px
 }
 
 .footer_navigation_list li {
-    padding-left: 35px;
+    letter-spacing: 3.6px;
+    padding-left: 40px; 
 }
-
 .footer_number {
     margin-left: 90px
 }
@@ -739,7 +887,7 @@ td {
 
 .main_section_toolbar ul  {
     display: flex;
-    margin-left: 50px;
+    margin-left: -19px;
 }
 
 .main_section_toolbar li {
@@ -775,23 +923,25 @@ td {
 .movebar-menu {
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
-    margin-left: 320px;
+    margin-top: 15px;
+    margin-left: 380px;
     margin-bottom: 70px;
+    letter-spacing: 3.2px;
 }
 
 .back_button {
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-top: 25px;
+    padding-left: 50px;
 }
 
 .movebar-menu_list {
     display: flex;
-    padding-top: 10px
+    padding-top: 11px;
+    margin-left: -56px
 }
 
 .movebar-menu_list li {
-    padding-left: 30px;
+    padding-left: 30px
 }
 
 .front_button {
@@ -804,6 +954,8 @@ td {
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none;
+    margin-left: 20px;
+    margin-bottom: 100px;
 }
 
 .social-button {
